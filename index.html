@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Welcome to My Flask App</h1>
+            <p>Click the links below to explore:</p>
+            <div class="links">
+                <a href="{{ url_for('user', username='Sneha') }}" class="btn">Sneha's Profile</a>
+                <a href="{{ url_for('user', username='Anuprita') }}" class="btn">Anuprita's Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
